@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atividade DOM</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <div class="container">
+    <h1 id="titulo">Título Original</h1>
+    <button onclick="alterarTitulo()">Btn 1</button>
+
+    <img id="imagem" src="https://picsum.photos/id/237/200/300" alt="Imagem Exemplo" />
+    <button onclick="alterarImagem()">Btn 2</button>
+
+    <p id="texto1">Texto 1</p>
+    <button onclick="alterarTexto1()">Btn 3</button>
+
+    <p id="texto2">Texto 2</p>
+
+    <div class="botoes-final">
+      <button onclick="atualizarTexto2(this)">Btn 4</button>
+      <button onclick="atualizarTexto2(this)">Btn 5</button>
+      <button onclick="atualizarTexto2(this)">Btn 6</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
